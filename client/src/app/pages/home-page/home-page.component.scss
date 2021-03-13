@@ -1,0 +1,602 @@
+// -- GLOBAL --
+.section1 .wrapper > div, .section2 .wrapper > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.get-started-btn {
+  background: hsl(180, 66%, 49%);
+  border-radius: 32px;
+  color: #FFFFFF;
+  margin: 20px auto;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 12px 30px;
+  transition: .5s all;
+}
+
+.get-started-btn:hover {
+  background: #9BE3E2;
+}
+// -- GLOBAL --
+
+
+// ---- section1 start ----
+.section1 {
+  position: relative;
+  min-height: 660px;
+  overflow: hidden;
+}
+.section1 .banner {
+  padding: 110px 0 140px 0;
+}
+
+.banner .l-banner {
+  max-width: 462px;
+}
+
+.banner .l-banner h1 {
+  font-size: 62px;
+  line-height: 1.2;
+  color: hsl(255, 11%, 22%);
+  font-family: "Poppins-Bold";
+}
+.banner .l-banner p {
+  color: hsl(257, 7%, 63%);
+  margin-bottom: 36px;
+}
+
+.section1 .r-banner {
+  position: relative;
+  width: 100%;
+}
+
+.section1 .r-banner svg {
+  position: absolute;
+  top: -196px;
+  left: 250px;
+}
+
+//.section1 {
+//  background: url('../../../assets/images/illustration-working.svg');
+//  width: 733px;
+//  height: 482px;
+//  background-repeat: no-repeat;
+//  background-size: cover;
+//}
+
+// ---- section1 end ----
+
+// ---- section2 start ----
+.section2 {
+  position: relative;
+  top: -74px;
+}
+
+.shorten-it {
+  position: relative;
+}
+
+.shorten-it .form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.shorten-it svg{
+  background: #3A3053;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  border-radius: 12px;
+}
+
+.shorten-it form {
+  display: flex;
+  align-items: center;
+  height: 148px;
+  padding: 0 60px;
+}
+
+.shorten-it input[type=text] {
+  width: 100%;
+  outline: none;
+  height: 44px;
+  border-radius: 4px;
+  padding-left: 16px;
+  border: 2px solid transparent;
+  transition: .2s all;
+}
+
+.shorten-it button {
+  background: hsl(180, 66%, 49%);
+  width: 150px;
+  border: none;
+  outline: none;
+  height: 48px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  margin: 20px auto;
+  cursor: pointer;
+  position: relative;
+  transition: .5s all;
+}
+
+.shorten-it button:hover {
+  background: #9BE3E2;
+}
+
+.form-control {
+  width: 100%;
+  margin-right: 32px;
+  position: relative;
+}
+
+.ng_invalid {
+  border: 2px solid #f46262!important;
+}
+
+.error-message {
+  position: absolute;
+  top: 52px;
+  color: hsl(0, 87%, 67%);
+  display: block;
+  width: 206px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.shorted_link_original {
+  display: block;
+  max-width: 400px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ng_invalid::placeholder {
+  color: hsl(0, 87%, 67%);
+  opacity: 1; /* Firefox */
+}
+
+.ng_invalid:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: hsl(0, 87%, 67%);
+}
+
+.ng_invalid::-ms-input-placeholder { /* Microsoft Edge */
+  color: hsl(0, 87%, 67%);
+}
+
+.lds-ring {
+  position: relative;
+  top: -6px;
+  left: -4px;
+}
+.lds-ring span {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 8px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring span:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring span:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring span:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// ---- section2 end ----
+
+// ---- section-result start ----
+.section-result {
+  padding-top: 94px;
+  background: #F0F1F6;
+}
+
+.section-result .shorted-link {
+  border: none;
+  outline: none;
+  height: 56px;
+  border-radius: 4px;
+  padding-left: 16px;
+  background: #FFFFFF;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-result .shorted-link > div {
+  display: flex;
+  align-items: center;
+}
+
+.section-result .shorted-link > div > button {
+  background: hsl(180, 66%, 49%);
+  width: 96px;
+  border: none;
+  outline: none;
+  height: 32px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: .5s all;
+}
+
+.section-result .shorted-link > div > button:hover {
+  background: #9BE3E2;
+}
+
+.isCopied {
+  background: hsl(257, 27%, 26%)!important;
+}
+
+// ---- section-result end ----
+
+// ---- section3 start ----
+.section3 .wrapper > div {}
+
+.section3 {
+  padding: 100px 0 110px 0;
+}
+
+.section3 .advanced-statistics > h2, .section3 .advanced-statistics > p {
+  text-align: center;
+}
+
+.section3 .advanced-statistics > p{
+  max-width: 470px;
+}
+
+.section3 h2 {
+  font-size: 34px;
+  color: hsl(255, 11%, 22%);
+}
+
+.section3 p {
+  color: hsl(257, 7%, 63%);
+  margin: 12px auto;
+}
+
+.section3 {
+  background: #F0F1F6;
+  width: 100%;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  z-index: 0;
+  margin-top: 94px;
+}
+
+.statistics > div {
+  background: #FFFFFF;
+  position: relative;
+  padding: 74px 31px 28px 31px;
+  max-width: 308px;
+}
+
+.statistics > div h3 {
+  color: hsl(255, 11%, 22%);
+}
+
+.statistics > div p {
+  font-size: 16px;
+}
+
+.statistics > div > svg {
+  background: #3A3053;
+  padding: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  left: 32px;
+}
+
+.brand-recognition:before {
+  content: "";
+  width: 60px;
+  background: #2acfcf;
+  height: 8px;
+  display: block;
+  position: absolute;
+  top: 140px;
+  right: -46px;
+  z-index: -1;
+}
+
+.detailed-records {
+  margin-top: 40px;
+}
+
+.detailed-records:before {
+  content: "";
+  width: 60px;
+  background: #2acfcf;
+  height: 8px;
+  display: block;
+  position: absolute;
+  top: 100px;
+  right: -46px;
+  z-index: -1;
+}
+
+.fully-customizable {
+  margin-top: 80px;
+}
+
+// ---- section3 end ----
+
+// ---- section4 start ----
+.section4 {
+  position: relative;
+  height: 240px;
+}
+
+.section4 h2 {
+  font-size: 34px;
+}
+
+.section4 svg {
+  background: #3A3053;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.section4 .get-started {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #FFFFFF;
+}
+
+// ---- section4 end ----
+
+
+
+// ---- responsive css start ----
+
+@media (max-width: 1284px) {
+  .banner .l-banner h1 {
+    font-size: 58px;
+  }
+  .section1 .r-banner svg {
+    left: 50px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .statistics {
+    flex-direction: column;
+    align-items: center;
+  }
+  .statistics > div {
+    text-align: center;
+  }
+  .brand-recognition:before {
+    top: inherit;
+    bottom: -60px;
+    width: 8px;
+    height: 64px;
+    right: 181px;
+  }
+  .detailed-records:before {
+    top: inherit;
+    bottom: -60px;
+    width: 8px;
+    height: 64px;
+    right: 181px;
+  }
+  .detailed-records {
+    margin-top: 90px;
+  }
+  .statistics > div > svg {
+    left: 145px;
+  }
+  .fully-customizable > svg {
+    left: 141px!important;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner .l-banner h1 {
+    font-size: 46px;
+  }
+  .section1 .r-banner svg {
+    transform: scale(0.8);
+    left: -88px;
+  }
+  p, span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section1 .banner {
+    flex-direction: column-reverse;
+  }
+  .section1 .r-banner svg {
+    left: 0;
+    top: -110px;
+  }
+  .section1 .r-banner{
+    min-height: 385px;
+  }
+  .banner .l-banner {
+    text-align: center;
+  }
+  .section-result .shorted-link {
+    flex-direction: column;
+    height: auto;
+  }
+  .section-result .shorted-link > div {
+    flex-direction: column;
+  }
+  .result .shorted-link > p {
+    padding: 8px 16px;
+    width: -webkit-fill-available;
+    border-bottom: 1px solid #E5E5E5;
+    font-size: 14px;
+  }
+  .section-result .shorted-link {
+    padding: 0;
+  }
+  .section-result .shorted-link > div {
+    width: 100%;
+  }
+  .result .shorted-link > div > p  {
+    padding: 8px 16px;
+    width: -webkit-fill-available;
+    font-size: 14px;
+  }
+  .result .shorted-link > div {
+    align-items: flex-start;
+    width: -webkit-fill-available;
+  }
+  .section-result .shorted-link > div > button {
+    width: inherit;
+    margin: 0 16px 16px 16px;
+  }
+  .shorten-it form {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .shorten-it input[type=text] {
+    margin: 0 16px;
+    width: -webkit-fill-available;
+  }
+  .form-control {
+    width: -webkit-fill-available;
+    margin-right: 0;
+  }
+  .shorten-it form {
+    padding: 0;
+  }
+  .shorten-it button {
+    width: -webkit-fill-available;
+    //margin: 16px 16px 0px 16px;
+    margin: 12px 16px 0px 16px;
+
+  }
+  .shorten-it .form .form-submit {
+    width: -webkit-fill-available;
+  }
+  .error-message {
+    //left: 16px;
+    font-size: 12px;
+    position: relative;
+    top: 2px;
+    left: 16px;
+    display: block;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .shorten-it input[type=text] {
+    height: 38px;
+  }
+  .shorten-it button {
+    height: 42px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section1 .r-banner svg {
+    left: -100px;
+    transform: scale(0.7);
+    top: -180px;
+  }
+  .section1 .r-banner {
+    min-height: 270px;
+  }
+  .banner .l-banner h1 {
+    font-size: 38px;
+  }
+  .section3 h2 {
+    font-size: 28px;
+  }
+  .section4 h2 {
+    font-size: 28px;
+  }
+  .statistics > div {
+    padding: 74px 24px 28px 24px;
+    width: 280px;
+  }
+  .brand-recognition:before {
+    right: 160px;
+  }
+  .detailed-records:before {
+    right: 160px;
+  }
+  .statistics > div > svg {
+    left: 124px;
+  }
+  .fully-customizable > svg {
+    left: 120px!important;
+  }
+}
+
+@media (max-width: 358px) {
+  .statistics > div {
+    padding: 74px 4px 28px 4px;
+  }
+  .brand-recognition:before {
+    right: 140px;
+  }
+  .detailed-records:before {
+    right: 140px;
+  }
+  .statistics > div > svg {
+    left: 104px;
+  }
+  .fully-customizable > svg {
+    left: 100px !important;
+  }
+}
+
+
+// ---- responsive css end ----

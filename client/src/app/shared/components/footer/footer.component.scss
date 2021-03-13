@@ -1,0 +1,90 @@
+#footer {
+  background: hsl(260, 8%, 14%);
+}
+
+#footer ul {
+  list-style: none;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.footer-wrap .logo {
+  flex: 1;
+}
+
+.footer-wrap .menu {
+  display: flex;
+  flex: 2;
+  justify-content: space-evenly;
+}
+
+.footer-wrap .soc-icons {
+  flex: 1;
+}
+
+.footer-wrap .soc-icons ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-wrap .soc-icons ul li {
+  margin-left: 24px;
+}
+
+.footer-wrap .menu p {
+  color: #FFFFFF;
+  margin-bottom: 18px;
+  font-family: "Poppins-Bold";
+}
+
+.footer-wrap .menu ul li {
+  margin-bottom: 4px;
+}
+
+.footer-wrap .menu ul li a{
+  text-decoration: none;
+  color: hsl(0, 0%, 75%);
+  transition: .5s all;
+}
+
+.footer-wrap .menu ul li a:hover {
+  color: hsl(180, 66%, 49%);
+}
+
+.soc-icons ul li a svg path {
+  transition: .5s all;
+}
+
+.soc-icons ul li a svg:hover path {
+  fill: hsl(180, 66%, 49%)!important;
+}
+
+
+// ---- responsive css start ----
+
+@media (max-width: 880px) {
+  .footer-wrap {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-wrap .menu {
+    flex-direction: column;
+    margin: 32px auto;
+  }
+  .footer-wrap .soc-icons ul {
+    justify-content: center;
+  }
+  .footer-wrap .soc-icons ul li {
+    margin: 0 12px;
+  }
+  .footer-wrap .menu .features {
+    margin: 16px 0;
+  }
+}
+
+// ---- responsive css end ----
